@@ -23,6 +23,6 @@ jobs:
       # - name: job status
       #   run: echo "🍏 This job's status is ${{ job.status }}."
       - name: call the workflow
-        uses: .github/workflows/test.yaml
+        uses: /.github/workflows/test.yaml
         with:
           name: "Hello world"
