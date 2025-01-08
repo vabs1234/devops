@@ -9,6 +9,7 @@ on:
         default: "Hello world1"
 jobs:
   test:
+    runs-on: ubuntu-latest  
     steps:
       - name: run the test
         run: echo "${{ inputs.name }}"
