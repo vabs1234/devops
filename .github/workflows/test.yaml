@@ -1,0 +1,15 @@
+name: test
+runs-name: for events $ {{github.event_name}}
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: hghghgh
+        required: true
+        type: string
+        default: "Hello world1"
+jobs:
+  test:
+    - name: run the test
+      run: echo "${{ inputs.name }}"
