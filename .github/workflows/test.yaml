@@ -9,5 +9,6 @@ on:
         default: "Hello world1"
 jobs:
   test:
-    - name: run the test
-      run: echo "${{ inputs.name }}"
+    steps:
+      - name: run the test
+        run: echo "${{ inputs.name }}"
